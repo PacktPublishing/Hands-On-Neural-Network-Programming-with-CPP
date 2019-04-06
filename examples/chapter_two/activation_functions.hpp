@@ -2,6 +2,12 @@
 #define ACTIVATION_FUNCTIONS_H_
 
 #include <math.h>
+#include <numeric>
+
+#include <Eigen/Core>
+
+using Matrix = Eigen::MatrixXd;
+using Vector = Eigen::VectorXd;
 
 class LogisticActivationFunction
 {
@@ -21,6 +27,34 @@ class TanhActivationFunction
     {
         return tanh(z);
     }
+};
+
+class ReLUActivationFunction
+{
+  public:
+    virtual double operator()(double z) const
+    {
+        return std::max(0.0, z);
+    }
+}; 
+
+class SoftmaxActivationFunction
+{
+  public:
+
+    virtual Matrix operator()(const Matrix &z) const
+    {
+
+        if (z.rows() == 1)
+            throw std::invalid_argument("Softmax is not suitable for single value outputs. Use sigmoid/tanh instead.");
+        Vector maxs = z.colwise().maxCoeff();
+        Matrix reduc = z.rowwise() - maxs.transpose();
+        Matrix expo = reduc.array().exp();
+        Vector sums = expo.colwise().sum();
+        Matrix result = expo.array().rowwise() / sums.transpose().array();
+        return result;
+    }
+
 };
 
 #endif
