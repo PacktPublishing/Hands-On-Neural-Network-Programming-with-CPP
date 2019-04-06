@@ -1,9 +1,7 @@
-#include "mlp_core.hpp"
-#include "dataset.hpp"
+#include "activation_functions.hpp"
 
 #include <iostream>
-#include <iomanip>
-#include <numeric>
+#include <vector>
 
 /**
  * Hands-On Neural Network Programming with C++
