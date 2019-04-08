@@ -55,8 +55,10 @@ int main()
        const Vector output = net.output(input);
        mse += pow(output(0) - expected(0), 2);
    }
-   mse /= dataset.size();
+   int m = dataset.cols();
+   mse /= m;
    std::cout << "The mean squared error is " << mse << "\n";
+   
    return 0;
 }
 
