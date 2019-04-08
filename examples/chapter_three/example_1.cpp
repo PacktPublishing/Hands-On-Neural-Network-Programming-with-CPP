@@ -103,5 +103,5 @@ void generateChart(const Matrix &data)
     gr.Title("Cost x Weights & bias");
     auto chartData = convertChartData(data);
     generateChartSurface(gr, chartData, 60, 60, data.minCoeff(), data.maxCoeff());
-    gr.WriteFrame("MLP_w_b.png");
+    gr.WriteFrame("cost_x_w_b.png");
 }
