@@ -1,11 +1,19 @@
 #include <iostream>
 #include <numeric>
 #include <random>
-#include <Eigen/Core>
-using Matrix = Eigen::MatrixXd;
-using Vector = Eigen::VectorXd;
 
 #include "activation_functions.hpp"
+
+/**
+ * Hands-On Neural Network Programming with C++
+ * Packt Publishing @ 2019
+ * 
+ * Chapter 3, example 2
+ * 
+ * Training a small network with gradient descent
+ * 
+ * 
+**/
 
 std::tuple<double, double, double, double> gradientDescent(Matrix &X, Matrix &T, double learningRate, int maxEpochs, double minCost);
 std::random_device rd;

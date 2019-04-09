@@ -2,14 +2,20 @@
 #include <numeric>
 #include <random>
 
-#include <Eigen/Core>
-
-using Matrix = Eigen::MatrixXd;
-using Vector = Eigen::VectorXd;
-
 #include <mgl2/mgl.h>
 
 #include "activation_functions.hpp"
+
+/**
+ * Hands-On Neural Network Programming with C++
+ * Packt Publishing @ 2019
+ * 
+ * Chapter 3, example 1
+ * 
+ * Generating the cost surface
+ * 
+ * 
+**/
 
 void generateChart(const Matrix &data);
 
@@ -20,12 +26,12 @@ std::tuple<Matrix, Matrix> loadDataset();
 double quadraticCost(const Matrix & X, const Matrix & T, double w, double b)
 {
     auto output = X.unaryExpr([w,b](double x){
-        return g.evaluate(x * w + b);
+        return g(x * w + b);
     });
     auto cost = output.binaryExpr(T, [](double y, double t){
         return pow(y - t, 2);
     });
-    return cost.sum() / X.cols();
+    return cost.sum() / (2.0 * X.cols());
 }
 
 std::tuple<Matrix, Matrix> makeSyntheticDataset()
@@ -93,7 +99,7 @@ void generateChartSurface(mglGraph &gr, const mglData &a, double ang1, double an
     gr.Axis();
     gr.Surf(a, "#", "meshnum 7.5");
     gr.Grid();
-    gr.Label('x', "W00", 0);
+    gr.Label('x', "w", 0);
     gr.Label('y', "b", 0);
 }
 
