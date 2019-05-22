@@ -4,7 +4,7 @@
 
 #include <mgl2/mgl.h>
 
-#include "activation_functions.hpp"
+#include "matrix_definitions.hpp"
 
 /**
  * Hands-On Neural Network Programming with C++
@@ -17,11 +17,14 @@
  * 
 **/
 
-void generateChart(const Matrix &data);
-
-ann::LogisticActivationFunction g;
-
-std::tuple<Matrix, Matrix> loadDataset();
+double g(const double z)
+{
+    double result;
+    if (z >= 45.0) result = 1;
+    else if (z <= -45.0) result = 0;
+    else result = 1.0 / (1.0 + exp(-z));
+    return result;
+}
 
 double quadraticCost(const Matrix & X, const Matrix & T, double w, double b)
 {
@@ -67,14 +70,6 @@ Matrix generateCostSurface(const Matrix &X, const Matrix &T, double wMin, double
     return result;
 }
 
-int main(int, char **)
-{
-    auto [X, T] = makeSyntheticDataset();
-    Matrix surface = generateCostSurface(X, T, -8, 8, -8, 8, 0.1);
-    generateChart(surface);
-    return 0;
-}
-
 mglData convertChartData(const Matrix &data)
 {
     mglData result;
@@ -92,10 +87,11 @@ mglData convertChartData(const Matrix &data)
     return result;
 }
 
-void generateChartSurface(mglGraph &gr, const mglData &a, double ang1, double ang2, double zMin, double zMax)
+void generateChartSurface(mglGraph &gr, const mglData &a, double ang1, double ang2, 
+    double xMin, double xMax, double yMin, double yMax, double zMin, double zMax)
 {
     gr.Rotate(ang1, ang2);
-    gr.SetRanges(-8.0, 8.0, -8.0, 8.0, zMin, zMax);
+    gr.SetRanges(xMin, xMax, yMin, yMax, zMin, zMax);
     gr.Axis();
     gr.Surf(a, "#", "meshnum 7.5");
     gr.Grid();
@@ -103,11 +99,43 @@ void generateChartSurface(mglGraph &gr, const mglData &a, double ang1, double an
     gr.Label('y', "b", 0);
 }
 
+void generateChartDense(mglGraph &gr, const mglData &a, double xMin, double xMax, 
+    double yMin, double yMax)
+{
+
+    gr.Label('x', "w", 0);
+    gr.Label('y', "b", 0);
+
+    gr.Light(false);
+    gr.Alpha(false);
+    gr.SetRanges(xMin, xMax, yMin, yMax);
+    gr.Axis();
+    gr.Box();
+    gr.Dens(a);
+    gr.Grid();
+    gr.Colorbar();
+}
+
 void generateChart(const Matrix &data)
 {
     mglGraph gr;
+    gr.SetSize(1440, 480);
     gr.Title("Cost x Weights & bias");
     auto chartData = convertChartData(data);
-    generateChartSurface(gr, chartData, 60, 60, data.minCoeff(), data.maxCoeff());
-    gr.WriteFrame("cost_x_w_b.png");
+
+    gr.SubPlot(2, 1, 0);
+    generateChartSurface(gr, chartData, 60, 40, -8.0, 8.0, -8.0, 8.0, data.minCoeff(), data.maxCoeff());
+
+    gr.SubPlot(2, 1, 1);
+
+    generateChartDense(gr, chartData, -8.0, 8.0, -8.0, 8.0);
+    gr.WriteFrame("cost_x_w_b.svg");
+}
+
+int main(int, char **)
+{
+    auto [X, T] = makeSyntheticDataset();
+    Matrix surface = generateCostSurface(X, T, -8, 8, -8, 8, 0.1);
+    generateChart(surface);
+    return 0;
 }

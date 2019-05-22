@@ -1,5 +1,5 @@
-#ifndef MATRIX_DEFINITIONS_H
-#define MATRIX_DEFINITIONS_H
+#ifndef MATRIX_DEFINITIONS_H_
+#define MATRIX_DEFINITIONS_H_
 
 #include <Eigen/Core>
 
