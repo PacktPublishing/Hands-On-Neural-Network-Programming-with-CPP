@@ -1,0 +1,17 @@
+# fast-cpp-csv-parser
+
+configure_file(libs/fast-cpp-csv-parser/CMakeLists.txt.in ../libs/fast-cpp-csv-parser/download/CMakeLists.txt)
+
+execute_process(COMMAND ${CMAKE_COMMAND} -G "${CMAKE_GENERATOR}" .
+  RESULT_VARIABLE result
+  WORKING_DIRECTORY ../libs/fast-cpp-csv-parser/download )
+if(result)
+  message(FATAL_ERROR "CMake step for fast-cpp-csv-parser failed: ${result}")
+endif()
+execute_process(COMMAND ${CMAKE_COMMAND} --build .
+  RESULT_VARIABLE result
+  WORKING_DIRECTORY ../libs/fast-cpp-csv-parser/download )
+if(result)
+  message(FATAL_ERROR "Build step for fast-cpp-csv-parser failed: ${result}")
+ endif()
+include_directories(libs/fast-cpp-csv-parser/src)
