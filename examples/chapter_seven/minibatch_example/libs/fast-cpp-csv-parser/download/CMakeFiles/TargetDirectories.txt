@@ -1,0 +1,3 @@
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/CMakeFiles/rebuild_cache.dir
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/CMakeFiles/edit_cache.dir
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/CMakeFiles/fast-cpp-csv-parser.dir

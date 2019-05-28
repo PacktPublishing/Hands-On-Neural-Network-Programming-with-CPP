@@ -1,0 +1,14 @@
+# Target labels
+ fast-cpp-csv-parser
+# Source files and their labels
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/CMakeFiles/fast-cpp-csv-parser
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/CMakeFiles/fast-cpp-csv-parser.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/CMakeFiles/fast-cpp-csv-parser-complete.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-install.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-mkdir.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-download.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-update.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-patch.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-configure.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-build.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/fast-cpp-csv-parser/download/fast-cpp-csv-parser-prefix/src/fast-cpp-csv-parser-stamp/fast-cpp-csv-parser-test.rule

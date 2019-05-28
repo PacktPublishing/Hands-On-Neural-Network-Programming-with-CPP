@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/CMakeFiles/eigen"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/CMakeFiles/eigen.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/CMakeFiles/eigen-complete.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-install.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-mkdir.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-download.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-update.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-patch.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-configure.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-build.rule"
+		},
+		{
+			"file" : "/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"eigen"
+		],
+		"name" : "eigen"
+	}
+}

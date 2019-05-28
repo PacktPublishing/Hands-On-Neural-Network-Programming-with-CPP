@@ -86,14 +86,14 @@ void drawMSE(Matrix &mseData)
     gr.AddLegend("SGD", "=H");
     gr.Legend(1, 1.1);
 
-    gr.WriteFrame("chapter7.svg");
+    gr.WriteFrame("minibatch.svg");
 
 }
 
 int main(int argc, char **argv)
 {
     int epochs = 10000;
-    double learningRate = 0.1;
+    double learningRate = 0.05;
     if (argc > 1)
     {
         int epochsParam = std::atoi(argv[1]);

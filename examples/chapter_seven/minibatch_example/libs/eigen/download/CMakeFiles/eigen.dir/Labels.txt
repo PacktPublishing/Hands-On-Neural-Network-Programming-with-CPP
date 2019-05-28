@@ -1,0 +1,14 @@
+# Target labels
+ eigen
+# Source files and their labels
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/CMakeFiles/eigen
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/CMakeFiles/eigen.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/CMakeFiles/eigen-complete.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-install.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-mkdir.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-download.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-update.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-patch.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-configure.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-build.rule
+/Users/luizdoleron/Desktop/packt/workspace/hands-on_neural_network_programming_cpp_book/chapter7/minibatch_example/libs/eigen/download/eigen-prefix/src/eigen-stamp/eigen-test.rule
