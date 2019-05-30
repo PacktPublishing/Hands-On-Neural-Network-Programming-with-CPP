@@ -8,7 +8,7 @@
  * 
  * Chapter 2, example 2
  * 
- * Multilayer perceptron example
+ * Multilayer perceptron basic usage example
  * 
  * 
 **/
