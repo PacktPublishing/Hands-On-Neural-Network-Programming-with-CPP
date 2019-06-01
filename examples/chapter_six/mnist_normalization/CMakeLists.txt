@@ -89,15 +89,8 @@ include(libs/eigen/install.txt)
 
 include_directories(include)
 
-find_package(MathGL2 REQUIRED)
-include_directories(${MATHGL2_INCLUDE_DIRS})
-link_directories(${CMAKE_PREFIX_PATH}/lib/)
-
 find_package(OpenCV REQUIRED)
 
-include_directories(${PROJECT_SOURCE_DIR}/tests/include)
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/main.cpp)
-
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -pedantic)
-
-target_link_libraries(${PROJECT_NAME} ${MATHGL2_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
